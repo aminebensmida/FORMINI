@@ -1,6 +1,7 @@
 {
   "name": "backend",
   "version": "1.0.0",
+<<<<<<< HEAD
   "description": "",
   "main": "src/server.js",
   "scripts": {
@@ -19,5 +20,22 @@
     "mongodb": "4.1",
     "mongoose": "^7.0.0",
     "nodemailer": "^7.0.10"
+=======
+  "main": "src/server.js",
+  "scripts": {
+    "dev": "nodemon src/server.js",
+    "start": "node src/server.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "cors": "^2.8.5",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.3.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+>>>>>>> 5d150116560171cd5d6f9c8888f49233e447271c
   }
 }

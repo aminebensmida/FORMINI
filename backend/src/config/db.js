@@ -1,8 +1,12 @@
+<<<<<<< HEAD
 // backend/src/config/db.js
+=======
+>>>>>>> 5d150116560171cd5d6f9c8888f49233e447271c
 const mongoose = require('mongoose');
 
 const connectDB = async () => {
   try {
+<<<<<<< HEAD
     const conn = await mongoose.connect(process.env.MONGO_URI, {
       // Ces options sont recommandées pour éviter des warnings
       useNewUrlParser: true,
@@ -45,3 +49,15 @@ process.on('SIGINT', async () => {
 });
 
 module.exports = connectDB;
+=======
+    await mongoose.connect(process.env.MONGO_URI);
+    console.log('✅ MongoDB connected');
+  } catch (err) {
+    console.error('❌ MongoDB error :', err.message);
+    process.exit(1);
+  }
+};
+
+module.exports = connectDB;
+
+>>>>>>> 5d150116560171cd5d6f9c8888f49233e447271c

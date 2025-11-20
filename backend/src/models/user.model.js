@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 const mongoose = require('mongoose');
 
 const userSchema = new mongoose.Schema({
@@ -118,3 +119,6 @@ userSchema.methods.resetLoginAttempts = function() {
 };
 
 module.exports = mongoose.model('User', userSchema);
+=======
+
+>>>>>>> 5d150116560171cd5d6f9c8888f49233e447271c
